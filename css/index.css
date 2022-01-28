@@ -73,6 +73,29 @@ section, footer{
     margin: 0 auto;
 }
 
+/* Header/nav section Styles */
+nav{
+    text-decoration:none;
+    display:flex;
+    justify-content: space-around;
+}
+nav div{
+   width:50%;
+}
+nav div a{
+    display:flex;
+    justify-content: space-around;
+    text-decoration:none;
+    color:black;
+}
+#banner{
+    width:15%;
+}
+#banner img{
+    width: 100%;
+}
+
+}
 /*Top Section Styles*/
 
 .top-content {
@@ -99,25 +122,57 @@ section, footer{
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
+.middle-content .boxes{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    height: 25vh;
+
 }
 
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    height: 100%;
+    width:16%;
+    margin: 2%;
+}
+
+.box1{
+    background-color:teal;
+}
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
+}
 /*Bottom Section Styles*/
 .bottom-content {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .bottom-content .text-container {
