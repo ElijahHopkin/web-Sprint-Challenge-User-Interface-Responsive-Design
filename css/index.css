@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width:100%;
 }
 
 html{
@@ -214,6 +215,32 @@ footer nav a{
 }
 
 /*About Page Styles*/
+.breakdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    height: 80%;
+}
+
+.breakdown div{
+    width:45%;
+    margin:2%;
+}
+
+.breakdown div div{
+    width: 100%;
+}
+.#strategy-img{
+    background-image: url("../img/about-plan.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
 
 
 /*Responsive Styles*/
+@media(max 500px) {
+
+}
