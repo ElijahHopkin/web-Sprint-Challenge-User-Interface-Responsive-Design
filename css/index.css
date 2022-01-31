@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width:100%;
 }
 
 html{
@@ -66,13 +67,52 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 section, footer{
-    padding:4% 0;
+    padding:2% 0;
 }
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Header/nav section Styles */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right:3%;
+}
+nav div{
+    display:flex;
+    justify-content: space-around;
+}
+.banner{
+    width:20%;
+} 
+nav{
+    display:flex;
+    justify-content:space-around;
+}  
+.links{
+    width: 75%;
+    display:flex;
+
+}
+a{
+    display:flex;
+    justify-content: space-around;
+    text-decoration:none;
+    color:black;
+    margin-right:10%;
+    font-size:2rem;
+    padding-top:1%;
+}
+.photo{
+    width: 80%;
+    margin-left:10%;
+}
+.photo img{
+    width:100%;
+}
 /*Top Section Styles*/
 
 .top-content {
@@ -93,27 +133,64 @@ section, footer{
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    height:70vh;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
+.middle-content .boxes{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    height: 80%;
+
 }
 
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    height: 45%;
+    width:16%;
+    margin: 2%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.box1{
+    background-color:teal;
+}
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
+}
 /*Bottom Section Styles*/
 .bottom-content {
     display: flex;
@@ -133,8 +210,84 @@ footer {
     width: 100%;
     background-color: #ff4b00;
 }
+footer nav a{
+    text-decoration:none;
+    color:white;
+}
 
 /*About Page Styles*/
+.breakdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    height: 80%;
+}
+
+.breakdown div{
+    width:45%;
+    margin:2%;
+}
+
+.breakdown div div{
+    width: 100%;
+}
+.summary, .strategy, .how, .where, .collaborate{
+    border-bottom: 2px solid #ff4b00;
+}
 
 
 /*Responsive Styles*/
+@media(max-width: 500px) {
+    .navbar{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-left:1;
+    }
+    .navbar div{
+        width:60%;
+    }
+    .links{
+        width:50%;
+    }
+    .top-content .text-container{
+        width:90%;
+    }
+    .top-content{
+        flex-direction:column;
+        align-content:center;
+    }
+     .middle-content .boxes{
+        height:25%;
+     }
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+        width:45%;
+    }
+    .bottom-content{
+        flex-wrap:wrap;
+    }
+    .bottom-content .text-container{
+        width:80%;
+    }
+    footer nav {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    nav a{
+        width: 60%;
+    }
+    /* about page css */
+    .container-about-page{
+        margin:0;
+    }
+    .breakdown div{
+        width:60%;
+    }
+    .breakdown{
+        justify-content:center;
+    }
+    .summary, .function{
+        margin: 3%;
+    }
+}
