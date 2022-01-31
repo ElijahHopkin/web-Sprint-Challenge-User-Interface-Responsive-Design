@@ -75,37 +75,37 @@ section, footer{
 }
 
 /* Header/nav section Styles */
-nav{
+.navbar{
     display:flex;
-    justify-content: space-around;
-    margin-bottom:4%;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right:3%;
 }
 nav div{
-   width:100%;
+    display:flex;
+    justify-content: space-around;
 }
-nav div a{
+.banner{
+    width:20%;
+} 
+nav{
+    display:flex;
+    justify-content:space-around;
+}  
+.links{
+    width: 75%;
+    display:flex;
+
+}
+a{
     display:flex;
     justify-content: space-around;
     text-decoration:none;
     color:black;
-    width: 80%;
-    margin-left: 3%;
     margin-right:10%;
-    font-size:1.5rem;
+    font-size:2rem;
     padding-top:1%;
 }
-.banner{
-    width:30%;
-    margin-left:11%;
-}
-.banner img{
-    width:70%;
-}
-.links{
-    display:flex;
-    justify-content:space-around;    
-}
-
 .photo{
     width: 80%;
     margin-left:10%;
@@ -237,26 +237,18 @@ footer nav a{
 }
 
 
-
 /*Responsive Styles*/
 @media(max-width: 500px) {
-    *{
-        box-sizing:border-box;
-        border:1px solid gray;
-    }
-    nav{
-        width:100%;
+    .navbar{
         flex-wrap:wrap;
-
+        justify-content:center;
+        margin-left:1;
+    }
+    .navbar div{
+        width:60%;
     }
     .links{
         width:50%;
-        justify-content:center;
-        align-items:flex-start;
-    }
-    nav
-    .banner{
-        width:45%;
     }
     .top-content .text-container{
         width:90%;
@@ -277,13 +269,13 @@ footer nav a{
     .bottom-content .text-container{
         width:80%;
     }
-    footer nav a{
+    footer nav {
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
     }
-    footer a{
-        width:60%;
+    nav a{
+        width: 60%;
     }
     /* about page css */
     .container-about-page{
